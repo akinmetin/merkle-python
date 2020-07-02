@@ -30,7 +30,7 @@ def secondLowest(mylist: list) -> int:
         if lowest and second-lowest values have same frequency,
         max(results, key=lambda x: x[1]) statement will give
         the first lowest frequent sub-list
-        if I remove this sub-list and when I call the same max statement,
+        if I remove this sub-list and when I call the same max statement again,
         it will give me the second-lowest frequency.
         """
         results.remove(max(results, key=lambda x: x[1]))

@@ -29,8 +29,5 @@ def findTheLongest(inputStr: str) -> tuple:
     # used built-in "sorted" function to sort according to first item
     results = sorted(results)
 
-    """
-    returns the tuple that that has the max value on the second order
-    of sub-list
-    """
+    # returns the tuple that has the max value on the second index of sub-list
     return tuple(max(results, key=lambda x: x[1]))
